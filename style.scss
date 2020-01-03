@@ -11,7 +11,6 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 body {
   font-family: "muli", sans-serif;
   line-height: 1;
@@ -21,20 +20,16 @@ body {
     padding: 0;
   }
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-
 button {
   cursor: pointer;
 }
-
 input,
 textarea,
 button {
@@ -42,7 +37,6 @@ button {
   box-shadow: none;
   font-family: "muli", sans-serif;
 }
-
 /* Tool */
 @mixin prefix($property, $value, $prefixes: ()) {
   #{$property}: $value;
@@ -56,7 +50,6 @@ button {
   left: 50%;
   @include prefix(transform, translate(-50%, -50%), ms webkit)
 }
-
 @mixin --btn($px, $py, $cl, $bg){
   color: $cl;
   border-radius: 5px;
@@ -73,7 +66,6 @@ button {
     background: white;
   }
 }
-
 .main-menu{
   @include prefix(display, flex, ms webkit);
   flex-direction: unset;
@@ -87,21 +79,43 @@ button {
       a{
         color: white;
         text-transform: uppercase;
+        padding: 1rem 1.4rem;
       }
       &.active{
-        color: var(--menu-active);
+       > a{
+          color: var(--menu-active);
+        }
       }
-    }
-    a{
-      padding: 0.4375rem 0.625rem;
     }
     &.has-child{
       ul{
-        display: none;
+        opacity: 0;
         position: absolute;
+        top: 2.1875rem;
+        width: max-content;
+        background: var(--main-bg);
+        z-index: 3;
+        pointer-events: none;
+        border-radius: 5px;
+      li{
+        padding: 1rem 0;
+        @include prefix(transition, .3s, ms webkit);
+        @include prefix(transform, translateY(-16px), ms webkit);
+        &:hover{
+          background: var(--menu-active);
+        }
+        a{
+          text-transform: initial;
+          font-size: 0.9rem;
+        }
+      }
       }
       &:hover ul{
-        display: block;
+        opacity: 1;
+        pointer-events: visible;
+        li{
+          @include prefix(transform, translateY(0), ms webkit);
+        }
       }
     }
   }
@@ -165,7 +179,7 @@ button {
         border-radius: 50%;
         border: 2px solid rgba(255, 141, 41, 0);
         box-shadow: 0 4px 9px -3px rgba(49,54,68,.25);
-        @include prefix(transition, all .5s, ms webkit);
+        @include prefix(transition, all .3s, ms webkit);
       }
       &:hover img{
         @include prefix(transform, scale(1.1), ms webkit);
@@ -189,6 +203,10 @@ button {
 }
 .our-service-item{
   border-top: 2px solid var(--menu-active);
+  &.main-banner:hover img{
+    @include prefix(transform, scale(1), ms webkit);
+    @include prefix(filter, blur(0), ms webkit);
+  }
   &.main-banner:before{
     background: rgba(0, 0, 0, 0.29);
     /*
@@ -209,11 +227,12 @@ button {
       height: 100%;
       object-fit: cover;
       @include prefix(transition, all .5s, ms webkit);
-      @include prefix(transform, scale(1.2), ms webkit)
+      @include prefix(transform, scale(1.3), ms webkit);
+      @include prefix(filter, blur(1px), ms webkit);
     }
-    &:hover img{
+  /*  &:hover img{
       @include prefix(transform, scale(1.5), ms webkit);
-    }
+    } */
   }
   p.banner-content{
     font: 1.875rem "Bree Serif",serif;
