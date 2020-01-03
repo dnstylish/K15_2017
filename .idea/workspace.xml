@@ -93,10 +93,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add Menu || Banner || Review || Reward" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578075713920">
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578075736486">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578075713920" />
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578075736486" />
+    <state x="576" y="317" key="Github.ShareDialog" timestamp="1578075781472">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="576" y="317" key="Github.ShareDialog/54.23.1386.877@54.23.1386.877" timestamp="1578075781472" />
+    <state x="332" y="46" key="Github.UntrackedFilesDialog" timestamp="1578075788253">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="332" y="46" key="Github.UntrackedFilesDialog/54.23.1386.877@54.23.1386.877" timestamp="1578075788253" />
     <state x="219" y="55" key="SettingsEditor" timestamp="1578075587469">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
