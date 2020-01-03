@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c433587-5c65-4409-9dc6-1afbbeb24a59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/K15_2017.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/reward/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/reward/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/reward/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/reward/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/service/breakfast.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/service/dinner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/service/drink.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/service/fruit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/user/user-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/user/user-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/user/user-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k15_2017_de03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="dnstylish@gmail.com" />
+        <option value="Danny" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1VtbW86Hl6IbrNWzmXiAELr8L34" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c433587-5c65-4409-9dc6-1afbbeb24a59" name="Default Changelist" comment="" />
+      <created>1578075366677</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578075366677</updated>
+      <workItem from="1578075367925" duration="327000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add Menu || Banner || Review || Reward" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Menu || Banner || Review || Reward" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578075713920">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578075713920" />
+    <state x="219" y="55" key="SettingsEditor" timestamp="1578075587469">
+      <screen x="54" y="23" width="1386" height="877" />
+    </state>
+    <state x="219" y="55" key="SettingsEditor/54.23.1386.877@54.23.1386.877" timestamp="1578075587469" />
+  </component>
+</project>
