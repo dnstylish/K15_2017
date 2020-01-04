@@ -305,14 +305,6 @@ body.open_canvas {
   }
   &.main-banner:before{
     background: rgba(0, 0, 0, 0.29);
-    /*
-    &:hover{
-      + .post-thumb{
-        img{
-          @include prefix(transform, scale(1.5), ms webkit);
-        }
-      }
-    } */
   }
   .post-thumb{
     height: 350px;
@@ -326,9 +318,11 @@ body.open_canvas {
       @include prefix(transform, scale(1.2), ms webkit);
       @include prefix(filter, blur(0px), ms webkit);
     }
-  /*  &:hover img{
-      @include prefix(transform, scale(1.5), ms webkit);
-    } */
+    /* Lỗi không Hover vào .pots-thumb đê change img được. Phải hover vào main-banner */
+
+    /*  &:hover img{
+        @include prefix(transform, scale(1.5), ms webkit);
+      } */
   }
   p.banner-content{
     font: 1.875em "Bree Serif",serif;

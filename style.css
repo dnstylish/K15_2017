@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Setup basics CSS  */
 :root {
   --main-bg:#0e0e0e;
@@ -315,19 +316,12 @@ body.open_canvas:after {
 }
 .our-service-item.main-banner:before {
   background: rgba(0, 0, 0, 0.29);
-  /*
-  &:hover{
-    + .post-thumb{
-      img{
-        @include prefix(transform, scale(1.5), ms webkit);
-      }
-    }
-  } */
 }
 .our-service-item .post-thumb {
   height: 350px;
   overflow: hidden;
   z-index: 2;
+  /* Lỗi không Hover vào .pots-thumb đê change img được. Phải hover vào main-banner */
   /*  &:hover img{
       @include prefix(transform, scale(1.5), ms webkit);
     } */
