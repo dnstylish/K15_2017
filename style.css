@@ -167,7 +167,7 @@ button {
   border-radius: 5px;
   padding: 0.5rem 1rem;
   background: var(--menu-active);
-  border: 1px solid var(--menu-active);
+  border: 2px solid var(--menu-active);
 }
 
 .reward {
@@ -418,6 +418,28 @@ button {
   transform: skew(10deg, -8deg);
   position: relative;
   top: -0.625rem;
+}
+
+footer.site-footer .banner-content {
+  padding: 0 2.875rem;
+}
+footer.site-footer .banner-content h4 {
+  font-family: "Dancing Script", cursive;
+  color: var(--menu-active);
+  font-size: 1.75rem;
+}
+footer.site-footer .banner-content h3 {
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.5625rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  letter-spacing: unset;
+}
+footer.site-footer .banner-content p {
+  margin: 0.9375rem 0;
+}
+footer.site-footer .banner-content button.book-now {
+  background: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */

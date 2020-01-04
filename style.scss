@@ -56,7 +56,7 @@ button {
   border-radius: 5px;
   padding: $px $py;
   background: $bg;
-  border: 1px solid $bg;
+  border: 2px solid $bg;
 }
 /* Your style start from here */
 .warp{
@@ -392,6 +392,29 @@ button {
       transform: skew(10deg, -8deg);
       position: relative;
       top: -0.625rem;
+    }
+  }
+}
+footer.site-footer{
+  .banner-content{
+    padding: 0 2.875rem;
+    h4{
+      font-family: 'Dancing Script', cursive;
+      color: var(--menu-active);
+      font-size: 1.75rem;
+    }
+    h3{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 1.5625rem;
+      text-transform: capitalize;
+      font-weight: 300;
+      letter-spacing: unset;
+    }
+    p{
+      margin: 0.9375rem 0;
+    }
+    button.book-now{
+      background: transparent;
     }
   }
 }

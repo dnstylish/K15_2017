@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c433587-5c65-4409-9dc6-1afbbeb24a59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/work-place.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/chef.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/chef.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
@@ -21,6 +21,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="dnstylish &lt;dnstylish@gmail.com&gt;" />
         <option value="Danny &lt;dnstylish@gmail.com&gt;" />
         <option value="dnstylish@gmail.com" />
         <option value="Danny" />
@@ -85,7 +86,7 @@
       <updated>1578075366677</updated>
       <workItem from="1578075367925" duration="509000" />
       <workItem from="1578075919928" duration="5603000" />
-      <workItem from="1578105735862" duration="7472000" />
+      <workItem from="1578105735862" duration="8840000" />
     </task>
     <task id="LOCAL-00001" summary="Add Menu || Banner || Review || Reward">
       <created>1578075835704</created>
@@ -122,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578116798258</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="# Add Our Chef">
+      <created>1578119428676</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578119428676</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,13 +155,14 @@
     <MESSAGE value="Add Recommends" />
     <MESSAGE value="# Fix Sub Menu&#10;# Fix Some Animation &amp; CSS" />
     <MESSAGE value="# Add Recommend" />
-    <option name="LAST_COMMIT_MESSAGE" value="# Add Recommend" />
+    <MESSAGE value="# Add Our Chef" />
+    <option name="LAST_COMMIT_MESSAGE" value="# Add Our Chef" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578116797474">
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578119428207">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578116797474" />
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578119428207" />
     <state x="576" y="317" key="Github.ShareDialog" timestamp="1578075781472">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -166,10 +175,10 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="219" y="55" key="SettingsEditor/54.23.1386.877@54.23.1386.877" timestamp="1578076076797" />
-    <state x="310" y="152" key="Vcs.Push.Dialog.v2" timestamp="1578116809029">
+    <state x="310" y="152" key="Vcs.Push.Dialog.v2" timestamp="1578119444197">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="310" y="152" key="Vcs.Push.Dialog.v2/54.23.1386.877@54.23.1386.877" timestamp="1578116809029" />
+    <state x="310" y="152" key="Vcs.Push.Dialog.v2/54.23.1386.877@54.23.1386.877" timestamp="1578119444197" />
     <state x="498" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578076190404">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
