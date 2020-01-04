@@ -8,6 +8,7 @@
 *:before {
   margin: 0;
   padding: 0;
+  font-weight: 600;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -122,7 +123,7 @@ button {
 }
 .main-banner{
   position: relative;
-  &:before{
+  &:not(.recommend-items):before{
     content: "";
     position: absolute;
     width: 100%;
@@ -205,7 +206,7 @@ button {
   border-top: 2px solid var(--menu-active);
   &.main-banner:hover img{
     @include prefix(transform, scale(1), ms webkit);
-    @include prefix(filter, blur(0), ms webkit);
+    @include prefix(filter, blur(1), ms webkit);
   }
   &.main-banner:before{
     background: rgba(0, 0, 0, 0.29);
@@ -227,8 +228,8 @@ button {
       height: 100%;
       object-fit: cover;
       @include prefix(transition, all .5s, ms webkit);
-      @include prefix(transform, scale(1.3), ms webkit);
-      @include prefix(filter, blur(1px), ms webkit);
+      @include prefix(transform, scale(1.2), ms webkit);
+      @include prefix(filter, blur(0px), ms webkit);
     }
   /*  &:hover img{
       @include prefix(transform, scale(1.5), ms webkit);
@@ -285,5 +286,65 @@ button {
   }
 }
 .recommends{
-  display: none;
+  .recommend-title{
+    text-align: center;
+    padding: 1.25rem 0 2.1875rem;
+    h3{
+      font-size: 1.875rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+  &-box{
+    @include prefix(display, grid, ms);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px 5px;
+  }
+  small{
+    color: rgba(14, 14, 14, 0.51);
+    font-weight: 500;
+  }
+}
+.recommend-items{
+  .post-thumb{
+    height: 200px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include prefix(transition, all .5s, ms webkit);
+    }
+    &:hover img{
+      @include prefix(transform, scale(1.25) rotate(10deg), ms webkit);
+    }
+  }
+  .recommend-badge{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background: #e0002e;
+    text-transform: capitalize;
+    padding: 0.4375rem 0.625rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 4px 9px -3px rgba(49,54,68,.25);
+    @include prefix(transform,translate(1.25em, 1.25rem), ms webkit);
+  }
+  .recommend-meta{
+    padding: 1rem 1.25rem 0;
+    .recommend-description{
+      font-size: 20px;
+      @include prefix(display, flex, ms);
+      margin-bottom: 1.25rem;
+      h5{
+        margin-right: auto;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      strong{
+        color: var(--menu-active);
+        font-size: 1.0625rem;
+      }
+    }
+  }
 }

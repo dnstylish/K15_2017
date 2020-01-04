@@ -9,6 +9,7 @@
 *:before {
   margin: 0;
   padding: 0;
+  font-weight: 600;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -124,7 +125,7 @@ button {
 .main-banner {
   position: relative;
 }
-.main-banner:before {
+.main-banner:not(.recommend-items):before {
   content: "";
   position: absolute;
   width: 100%;
@@ -217,9 +218,9 @@ button {
   transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
-  filter: blur(0);
-  -ms-filter: blur(0);
-  -webkit-filter: blur(0);
+  filter: blur(1);
+  -ms-filter: blur(1);
+  -webkit-filter: blur(1);
 }
 .our-service-item.main-banner:before {
   background: rgba(0, 0, 0, 0.29);
@@ -247,12 +248,12 @@ button {
   transition: all 0.5s;
   -ms-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  filter: blur(1px);
-  -ms-filter: blur(1px);
-  -webkit-filter: blur(1px);
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  filter: blur(0px);
+  -ms-filter: blur(0px);
+  -webkit-filter: blur(0px);
 }
 .our-service-item p.banner-content {
   font: 1.875rem "Bree Serif", serif;
@@ -300,8 +301,73 @@ button {
   width: 4.375rem;
 }
 
-.recommends {
-  display: none;
+.recommends .recommend-title {
+  text-align: center;
+  padding: 1.25rem 0 2.1875rem;
+}
+.recommends .recommend-title h3 {
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem;
+}
+.recommends-box {
+  display: grid;
+  -ms-display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px 5px;
+}
+.recommends small {
+  color: rgba(14, 14, 14, 0.51);
+  font-weight: 500;
+}
+
+.recommend-items .post-thumb {
+  height: 200px;
+  overflow: hidden;
+}
+.recommend-items .post-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+.recommend-items .post-thumb:hover img {
+  transform: scale(1.25) rotate(10deg);
+  -ms-transform: scale(1.25) rotate(10deg);
+  -webkit-transform: scale(1.25) rotate(10deg);
+}
+.recommend-items .recommend-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  background: #e0002e;
+  text-transform: capitalize;
+  padding: 0.4375rem 0.625rem;
+  border-radius: 0.3125rem;
+  box-shadow: 0 4px 9px -3px rgba(49, 54, 68, 0.25);
+  transform: translate(1.25em, 1.25rem);
+  -ms-transform: translate(1.25em, 1.25rem);
+  -webkit-transform: translate(1.25em, 1.25rem);
+}
+.recommend-items .recommend-meta {
+  padding: 1rem 1.25rem 0;
+}
+.recommend-items .recommend-meta .recommend-description {
+  font-size: 20px;
+  display: flex;
+  -ms-display: flex;
+  margin-bottom: 1.25rem;
+}
+.recommend-items .recommend-meta .recommend-description h5 {
+  margin-right: auto;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.recommend-items .recommend-meta .recommend-description strong {
+  color: var(--menu-active);
+  font-size: 1.0625rem;
 }
 
 /*# sourceMappingURL=style.css.map */
