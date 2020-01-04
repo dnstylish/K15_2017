@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c433587-5c65-4409-9dc6-1afbbeb24a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/chef.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/recommends/recommends-8.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/reward/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/reward/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/reward/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/reward/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/reward/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/reward/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/service/breakfast.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/service/breakfast.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/service/dinner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/service/dinner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/service/drink.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/service/drink.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/service/fruit.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/service/fruit.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/user/user-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/user/user-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/chef.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/chef.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
@@ -95,7 +85,7 @@
       <updated>1578075366677</updated>
       <workItem from="1578075367925" duration="509000" />
       <workItem from="1578075919928" duration="5603000" />
-      <workItem from="1578105735862" duration="5144000" />
+      <workItem from="1578105735862" duration="7472000" />
     </task>
     <task id="LOCAL-00001" summary="Add Menu || Banner || Review || Reward">
       <created>1578075835704</created>
@@ -125,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578081617965</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="# Add Recommend">
+      <created>1578116798258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578116798258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,13 +146,14 @@
     <MESSAGE value="Add Menu || Banner || Review || Reward" />
     <MESSAGE value="Add Recommends" />
     <MESSAGE value="# Fix Sub Menu&#10;# Fix Some Animation &amp; CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="# Fix Sub Menu&#10;# Fix Some Animation &amp; CSS" />
+    <MESSAGE value="# Add Recommend" />
+    <option name="LAST_COMMIT_MESSAGE" value="# Add Recommend" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578081617692">
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2" timestamp="1578116797474">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578081617692" />
+    <state x="150" y="23" width="1120" height="780" key="CommitChangelistDialog2/54.23.1386.877@54.23.1386.877" timestamp="1578116797474" />
     <state x="576" y="317" key="Github.ShareDialog" timestamp="1578075781472">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
@@ -168,10 +166,10 @@
       <screen x="54" y="23" width="1386" height="877" />
     </state>
     <state x="219" y="55" key="SettingsEditor/54.23.1386.877@54.23.1386.877" timestamp="1578076076797" />
-    <state x="310" y="152" key="Vcs.Push.Dialog.v2" timestamp="1578081627628">
+    <state x="310" y="152" key="Vcs.Push.Dialog.v2" timestamp="1578116809029">
       <screen x="54" y="23" width="1386" height="877" />
     </state>
-    <state x="310" y="152" key="Vcs.Push.Dialog.v2/54.23.1386.877@54.23.1386.877" timestamp="1578081627628" />
+    <state x="310" y="152" key="Vcs.Push.Dialog.v2/54.23.1386.877@54.23.1386.877" timestamp="1578116809029" />
     <state x="498" y="335" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578076190404">
       <screen x="54" y="23" width="1386" height="877" />
     </state>

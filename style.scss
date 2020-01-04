@@ -297,7 +297,7 @@ button {
   &-box{
     @include prefix(display, grid, ms);
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 30px 5px;
+    grid-column-gap: 0.3125rem;
   }
   small{
     color: rgba(14, 14, 14, 0.51);
@@ -305,6 +305,7 @@ button {
   }
 }
 .recommend-items{
+  padding-bottom: 2.5rem;
   .post-thumb{
     height: 200px;
     overflow: hidden;
@@ -345,6 +346,52 @@ button {
         color: var(--menu-active);
         font-size: 1.0625rem;
       }
+    }
+  }
+}
+
+.our-chef{
+  background: #f9f9f1;
+  padding: 1.875rem 0;
+  &-box{
+    @include prefix(display, grid, ms);
+    grid-template-columns: repeat(2, 1fr);
+    .post-thumb{
+      padding: 0 15%;
+      img{
+        height: auto;
+      }
+    }
+    .our-chef-description{
+      padding-right: 15%;
+      h2{
+        font-family: 'Dancing Script', cursive;
+        color: var(--menu-active);
+        font-size: 1.75rem;
+        ~*{
+          margin-top: 1.875rem;
+        }
+      }
+    }
+    p.slogan{
+      font-family: 'Catamaran', sans-serif;
+      font-size: 1.5625rem;
+      text-transform: capitalize;
+      font-weight: 300;
+      &~*{
+        color: rgba(14,14,14,.51);
+        font-weight: 500;
+        line-height: 25px;
+      }
+    }
+    p.signature{
+      font-family: 'Rouge Script', cursive;
+      font-size: 1.5625rem;
+      text-transform: capitalize;
+      font-style: italic;
+      transform: skew(10deg, -8deg);
+      position: relative;
+      top: -0.625rem;
     }
   }
 }
