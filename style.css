@@ -55,6 +55,10 @@ button {
   -webkit-transform: translate(-50%, -50%);
 }
 
+.--pr {
+  position: relative;
+}
+
 /* Your style start from here */
 .warp {
   background: var(--main-bg);
@@ -75,8 +79,10 @@ button {
   height: 4.375rem;
   background: var(--main-bg);
 }
-.main-menu li.menu-item {
-  position: relative;
+@media (max-width: 787px) {
+  .main-menu {
+    display: none;
+  }
 }
 .main-menu li.menu-item a {
   color: white;
@@ -122,9 +128,6 @@ button {
   -webkit-transform: translateY(0);
 }
 
-.main-banner {
-  position: relative;
-}
 .main-banner:not(.recommend-items):before {
   content: "";
   position: absolute;
@@ -135,8 +138,12 @@ button {
   background: rgba(0, 0, 0, 0.48);
   z-index: 1;
 }
+.main-banner .banner-bg {
+  height: 350px;
+}
 .main-banner .banner-bg img {
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .main-banner .banner-content {
@@ -146,22 +153,22 @@ button {
   width: fit-content;
 }
 .main-banner .banner-content h4 {
-  font: 2.5rem "Pacifico", cursive;
+  font: 2.5em "Pacifico", cursive;
 }
 .main-banner .banner-content h3 {
-  font: 3.125rem "Bree Serif", serif;
+  font: 3.125em "Bree Serif", serif;
   text-transform: uppercase;
-  letter-spacing: 0.3125rem;
-  margin: 0.5rem 0;
+  letter-spacing: 0.3125em;
+  margin: 0.5em 0;
 }
 .main-banner .banner-content p {
-  font: 1.25rem "Raleway", sans-serif;
+  font: 1.25em "Raleway", sans-serif;
   font-weight: 300;
-  line-height: 1.875rem;
+  line-height: 1.875em;
 }
 .main-banner .banner-content button.btn {
-  margin-top: 0.625rem;
-  font-size: 1rem;
+  margin-top: 0.625em;
+  font-size: 1em;
   text-transform: uppercase;
   color: white;
   border-radius: 5px;
@@ -170,12 +177,6 @@ button {
   border: 2px solid var(--menu-active);
 }
 
-.reward {
-  display: grid;
-  -ms-display: grid;
-  -webkit-display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
 .reward-item {
   padding: 0.625rem 1.25rem;
   display: flex;
@@ -256,9 +257,9 @@ button {
   -webkit-filter: blur(0px);
 }
 .our-service-item p.banner-content {
-  font: 1.875rem "Bree Serif", serif;
+  font: 1.875em "Bree Serif", serif;
   text-transform: uppercase;
-  letter-spacing: 0.3125rem;
+  letter-spacing: 0.3125em;
 }
 
 .review {
@@ -268,31 +269,43 @@ button {
 }
 .review .review-box .review-heading {
   text-align: center;
-  margin-bottom: 1.875rem;
 }
 .review .review-box .review-heading h4 {
   font-size: 1.5625rem;
-  margin-bottom: 0.625rem;
+  margin-bottom: 1.25rem;
 }
 
-.review-item.reward {
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1.5625rem;
-  padding: 0 1.25rem;
-}
 .review-item .review-content {
   padding: 0.9375rem;
 }
-.review-item .review-content > span i {
-  font-size: 2.1875rem;
-}
 .review-item .review-description {
   margin: 1.5625rem 0;
+}
+.review-item .review-description span {
+  display: block;
+  margin-bottom: 0.725rem;
+}
+@media (max-width: 560px) {
+  .review-item .review-description span {
+    display: none;
+  }
+}
+.review-item .review-description i {
+  font-size: 2.1875em;
 }
 .review-item .review-description p {
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.5625rem;
+}
+.review-item .review-description p i {
+  font-size: 1.5625rem;
+  margin-right: 0.625rem;
+}
+@media (min-width: 560px) {
+  .review-item .review-description p i {
+    display: none;
+  }
 }
 .review-item .review-meta.reward-item {
   padding: 0;
@@ -306,18 +319,16 @@ button {
   padding: 1.25rem 0 2.1875rem;
 }
 .recommends .recommend-title h3 {
-  font-size: 1.875rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.875em;
+  margin-bottom: 1.25em;
 }
 .recommends-box {
-  display: grid;
-  -ms-display: grid;
-  grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 0.3125rem;
 }
 .recommends small {
   color: rgba(14, 14, 14, 0.51);
   font-weight: 500;
+  font-size: 0.875rem;
 }
 
 .recommend-items {
@@ -377,19 +388,20 @@ button {
   background: #f9f9f1;
   padding: 1.875rem 0;
 }
-.our-chef-box {
-  display: grid;
-  -ms-display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
 .our-chef-box .post-thumb {
   padding: 0 15%;
 }
 .our-chef-box .post-thumb img {
   height: auto;
+  box-shadow: 0 4px 9px -3px rgba(49, 54, 68, 0.25);
 }
 .our-chef-box .our-chef-description {
   padding-right: 15%;
+}
+@media (max-width: 560px) {
+  .our-chef-box .our-chef-description {
+    padding: 0.9375rem;
+  }
 }
 .our-chef-box .our-chef-description h2 {
   font-family: "Dancing Script", cursive;
@@ -421,25 +433,59 @@ button {
 }
 
 footer.site-footer .banner-content {
-  padding: 0 2.875rem;
+  padding: 0 2.875em;
 }
 footer.site-footer .banner-content h4 {
   font-family: "Dancing Script", cursive;
   color: var(--menu-active);
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 footer.site-footer .banner-content h3 {
   font-family: "Catamaran", sans-serif;
-  font-size: 1.5625rem;
+  font-size: 1.5625em;
   text-transform: capitalize;
   font-weight: 300;
   letter-spacing: unset;
 }
 footer.site-footer .banner-content p {
-  margin: 0.9375rem 0;
+  margin: 0.9375em 0;
 }
 footer.site-footer .banner-content button.book-now {
   background: transparent;
+}
+
+/* Responsive */
+.--fix-grid {
+  display: grid;
+  -ms-display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 787px) {
+  .--fix-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .--fix-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+.--fix-grid.review-item {
+  grid-template-columns: repeat(3, 1fr);
+}
+.--fix-grid.our-chef-box {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 800px) {
+  .--fix-font {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 640px) {
+  .--fix-font {
+    font-size: 0.7rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

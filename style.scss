@@ -58,6 +58,10 @@ button {
   background: $bg;
   border: 2px solid $bg;
 }
+
+.--pr{
+  position: relative;
+}
 /* Your style start from here */
 .warp{
   background: var(--main-bg);
@@ -74,9 +78,11 @@ button {
   align-items: center;
   height: 4.375rem;
   background: var(--main-bg);
+  @media (max-width: 787px) {
+    display: none;
+  }
   li{
     &.menu-item{
-      position: relative;
       a{
         color: white;
         text-transform: uppercase;
@@ -122,7 +128,6 @@ button {
   }
 }
 .main-banner{
-  position: relative;
   &:not(.recommend-items):before{
     content: "";
     position: absolute;
@@ -134,8 +139,10 @@ button {
     z-index: 1;
   }
   .banner-bg{
+    height: 350px;
     img{
-      height: auto;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
     }
   }
@@ -146,30 +153,28 @@ button {
     text-align: center;
     width: fit-content;
     h4{
-      font: 2.5rem 'Pacifico', cursive;
+      font: 2.5em 'Pacifico', cursive;
     }
     h3{
-      font: 3.125rem "Bree Serif",serif;;
+      font: 3.125em "Bree Serif",serif;;
       text-transform: uppercase;
-      letter-spacing: 0.3125rem;
-      margin: 0.5rem 0;
+      letter-spacing: 0.3125em;
+      margin: 0.5em 0;
     }
     p{
-      font: 1.25rem 'Raleway', sans-serif;
+      font: 1.25em 'Raleway', sans-serif;
       font-weight: 300;
-      line-height: 1.875rem;
+      line-height: 1.875em;
     }
     button.btn{
-      margin-top: 0.625rem;
-      font-size: 1rem;
+      margin-top: 0.625em;
+      font-size: 1em;
       text-transform: uppercase;
       @include --btn(0.5rem,1rem, white ,var(--menu-active));
     }
   }
 }
 .reward{
-  @include prefix(display,grid, ms webkit);
-  grid-template-columns: repeat(4,1fr);
   &-item{
     padding: 0.625rem 1.25rem;
     @include prefix(display, flex, ms);
@@ -236,9 +241,9 @@ button {
     } */
   }
   p.banner-content{
-    font: 1.875rem "Bree Serif",serif;
+    font: 1.875em "Bree Serif",serif;
     text-transform: uppercase;
-    letter-spacing: .3125rem;
+    letter-spacing: .3125em;
   }
 }
 .review{
@@ -248,32 +253,40 @@ button {
   .review-box{
     .review-heading{
       text-align: center;
-      margin-bottom: 1.875rem;
       h4{
         font-size: 1.5625rem;
-        margin-bottom: 0.625rem;
+        margin-bottom: 1.25rem;
       }
     }
   }
 }
 .review-item{
-  &.reward{
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 1.5625rem;
-    padding: 0 1.25rem;
-  }
   .review-content{
     padding: 0.9375rem;
-    >span i{
-      font-size: 2.1875rem;
-    }
   }
   .review-description{
     margin: 1.5625rem 0;
+    span{
+      display: block;
+      margin-bottom: .725rem;
+      @media (max-width: 560px) {
+        display: none;
+      }
+    }
+    i{
+      font-size: 2.1875em;
+    }
     p{
       font-size: 0.9375rem;
       font-weight: 400;
       line-height: 1.5625rem;
+      i{
+        font-size: 1.5625rem;
+        margin-right: 0.625rem;
+        @media (min-width: 560px) {
+          display: none;
+        }
+      }
     }
   }
   .review-meta{
@@ -290,18 +303,17 @@ button {
     text-align: center;
     padding: 1.25rem 0 2.1875rem;
     h3{
-      font-size: 1.875rem;
-      margin-bottom: 1.25rem;
+      font-size: 1.875em;
+      margin-bottom: 1.25em;
     }
   }
   &-box{
-    @include prefix(display, grid, ms);
-    grid-template-columns: repeat(4,1fr);
     grid-column-gap: 0.3125rem;
   }
   small{
     color: rgba(14, 14, 14, 0.51);
     font-weight: 500;
+    font-size: .875rem;
   }
 }
 .recommend-items{
@@ -354,16 +366,18 @@ button {
   background: #f9f9f1;
   padding: 1.875rem 0;
   &-box{
-    @include prefix(display, grid, ms);
-    grid-template-columns: repeat(2, 1fr);
     .post-thumb{
       padding: 0 15%;
       img{
         height: auto;
+        box-shadow: 0 4px 9px -3px rgba(49,54,68,.25);
       }
     }
     .our-chef-description{
       padding-right: 15%;
+      @media (max-width: 560px) {
+        padding: 0.9375rem;
+      }
       h2{
         font-family: 'Dancing Script', cursive;
         color: var(--menu-active);
@@ -397,24 +411,55 @@ button {
 }
 footer.site-footer{
   .banner-content{
-    padding: 0 2.875rem;
+    padding: 0 2.875em;
     h4{
       font-family: 'Dancing Script', cursive;
       color: var(--menu-active);
-      font-size: 1.75rem;
+      font-size: 1.75em;
     }
     h3{
       font-family: 'Catamaran', sans-serif;
-      font-size: 1.5625rem;
+      font-size: 1.5625em;
       text-transform: capitalize;
       font-weight: 300;
       letter-spacing: unset;
     }
     p{
-      margin: 0.9375rem 0;
+      margin: 0.9375em 0;
     }
     button.book-now{
       background: transparent;
     }
+  }
+}
+
+/* Responsive */
+
+@mixin --fix-grid($cl){
+  grid-template-columns: repeat($cl,1fr);
+}
+.--fix-grid{
+  @include prefix(display, grid, ms);
+  @include --fix-grid(4);
+  @media (max-width: 787px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 560px) {
+    grid-template-columns: 1fr !important;
+  }
+  &.review-item{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  &.our-chef-box{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.--fix-font{
+  @media (max-width: 800px) {
+    font-size: .8rem;
+  }
+  @media (max-width: 640px) {
+    font-size: .7rem;
   }
 }
