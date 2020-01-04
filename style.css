@@ -60,6 +60,23 @@ button {
 }
 
 /* Your style start from here */
+body.open_canvas {
+  /* overflow: hidden; */
+}
+body.open_canvas:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  transition: all 0.3s;
+  z-index: 999;
+  pointer-events: none;
+}
+
 .warp {
   background: var(--main-bg);
 }
@@ -69,20 +86,86 @@ button {
   background: white;
 }
 
-.main-menu {
+.site-header .main-nav > * {
   display: flex;
   -ms-display: flex;
   -webkit-display: flex;
   flex-direction: unset;
-  justify-content: center;
   align-items: center;
   height: 4.375rem;
   background: var(--main-bg);
 }
-@media (max-width: 787px) {
-  .main-menu {
-    display: none;
+
+.mobile-menu {
+  padding: 0.625rem;
+}
+@media (min-width: 787px) {
+  .mobile-menu {
+    display: none !important;
   }
+}
+.mobile-menu > .site-logo {
+  height: 100%;
+}
+.mobile-menu > .site-logo img {
+  height: 100%;
+}
+.mobile-menu ul.main-mobile-menu {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  background: var(--main-bg);
+  padding: 0 30px;
+  transition: 0.3s;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+}
+.mobile-menu ul.main-mobile-menu.opened {
+  left: 0;
+}
+.mobile-menu ul.main-mobile-menu > li {
+  padding: 1.25rem 0;
+}
+.mobile-menu ul.main-mobile-menu > li a {
+  font-size: 0.875rem;
+}
+.mobile-menu ul.main-mobile-menu li.has-child ul {
+  position: relative;
+  display: none;
+  top: 0.625rem;
+  left: 15px;
+}
+.mobile-menu ul.main-mobile-menu li.has-child:hover ul {
+  display: block;
+}
+.mobile-menu ul.main-mobile-menu li.has-child i {
+  top: 17px;
+  left: 0;
+  transform: inherit;
+}
+.mobile-menu .open-menu-btn {
+  margin-left: auto;
+}
+.mobile-menu .open-menu-btn i {
+  color: white;
+  font-size: 1.25rem;
+}
+
+.main-desktop-menu {
+  justify-content: center;
+}
+@media (max-width: 787px) {
+  .main-desktop-menu {
+    display: none !important;
+  }
+}
+
+.main-menu li {
+  position: relative;
 }
 .main-menu li.menu-item a {
   color: white;
@@ -91,6 +174,13 @@ button {
 }
 .main-menu li.menu-item.active > a {
   color: var(--menu-active);
+}
+.main-menu li.has-child > i {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-90%, -50%);
 }
 .main-menu li.has-child ul {
   opacity: 0;
@@ -320,7 +410,7 @@ button {
 }
 .recommends .recommend-title h3 {
   font-size: 1.875em;
-  margin-bottom: 1.25em;
+  margin-bottom: 0.525em;
 }
 .recommends-box {
   grid-column-gap: 0.3125rem;

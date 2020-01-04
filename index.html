@@ -6,13 +6,88 @@
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <script src="library/jquery/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 <div class="warp">
     <div class="site-content">
         <header class="site-header">
             <div class="main-nav">
-                <ul class="main-menu">
+                <div class="mobile-menu main-menu">
+                    <ul class="main-mobile-menu">
+                        <li class="site-logo">
+                            <a href="#">
+                                <img src="img/mobile-logo.png"/>
+                            </a>
+                        </li>
+                        <li class="menu-item has-child active">
+                            <a href="#" title="Home">Home</a>
+                            <ul class="child-menu">
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 1</a>
+                                </li>
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 2</a>
+                                </li>
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 3</a>
+                                </li>
+                            </ul>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </li>
+                        <li class="menu-item has-child">
+                            <a href="#" title="Home">About</a>
+                            <ul class="child-menu">
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 1</a>
+                                </li>
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 2</a>
+                                </li>
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 3</a>
+                                </li>
+                            </ul>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Menu</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Reservation</a>
+                        </li>
+                        <li class="menu-item has-child">
+                            <a href="#" title="Home">Block</a>
+                            <ul class="child-menu">
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 1</a>
+                                </li>
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 2</a>
+                                </li>
+                                <li class="child-menu-item">
+                                    <a href="#">Child Menu 3</a>
+                                </li>
+                            </ul>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="site-logo">
+                        <a href="#">
+                            <img src="img/mobile-logo.png"/>
+                        </a>
+                    </div>
+                    <span class="open-menu-btn">
+                        <a href="javascript:void(0)"><i class="fas fa-bars"></i></a>
+                    </span>
+                </div>
+                <ul class="main-menu main-desktop-menu">
                     <li class="menu-item has-child active">
                         <a href="#" title="Home">Home</a>
                         <ul class="child-menu">
@@ -26,6 +101,7 @@
                                 <a href="#">Child Menu 3</a>
                             </li>
                         </ul>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </li>
                     <li class="menu-item has-child">
                         <a href="#" title="Home">About</a>
@@ -40,6 +116,7 @@
                                 <a href="#">Child Menu 3</a>
                             </li>
                         </ul>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </li>
                     <li class="menu-item">
                         <a href="#">Menu</a>
@@ -63,6 +140,7 @@
                                 <a href="#">Child Menu 3</a>
                             </li>
                         </ul>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </li>
                     <li class="menu-item">
                         <a href="#">Contact Us</a>
@@ -395,5 +473,6 @@
     </div>
 </div>
 </body>
+<script type="text/javascript" src="library/jquery/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="assets/template.js"></script>
 </html>
