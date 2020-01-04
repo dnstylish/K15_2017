@@ -186,7 +186,7 @@ body.open_canvas:after {
 .main-menu li.has-child ul {
   opacity: 0;
   position: absolute;
-  top: 2.1875rem;
+  top: 2rem;
   width: max-content;
   background: var(--main-bg);
   z-index: 3;
